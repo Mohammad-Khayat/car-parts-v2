@@ -12,7 +12,7 @@
           <input-image placeholder="ادخل اسم التصنيف"></input-image>
           </b-form-group>
         </ValidationObserver>
-      </vue-modal>
+       </vue-modal>
 
 
        <b-row>
