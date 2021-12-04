@@ -3,7 +3,7 @@ export default{
         {
             name:'الرئيسية',
             icon:'fas fa-home',
-            path:'admin/',
+            path:'home',
         },
         {
             name:'مخزن القطع',
@@ -13,12 +13,12 @@ export default{
         {
             name:'السيارات',
             icon:'fas fa-home',
-            path:'admin/cars',
+            path:'cars',
         },
         {
             name:'التصنيفات',
             icon:'fas fa-home',
-            path:'admin/categories',
+            path:'categories',
         },
     ],
     'المعاملات':[

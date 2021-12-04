@@ -14,6 +14,12 @@
         </ValidationObserver>
       </vue-modal>
       </b-container>
+
+
+      <b-container fluid>
+
+
+      </b-container>
   </div>
 </template>
 

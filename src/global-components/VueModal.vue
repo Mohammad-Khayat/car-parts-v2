@@ -4,8 +4,7 @@
       <b-card
         no-body
         class="modal-card"
-        :style="{ height: height + '%', width: width + '%' }"
-      >
+       >
         <template #header>
           <div class="d-flex justify-content-between align-items-center">
             <h4 class="m-0">{{ title }}</h4>
@@ -111,6 +110,10 @@ export default {
   }
 .card-body {
   overflow: auto;
+  min-width: 500px;
+  @media (max-width:768px) {
+    min-width: 400px;
+  }
 }
 .close-btn{
 height: 36px;

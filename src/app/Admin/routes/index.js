@@ -2,7 +2,7 @@
 export default [
   {
     name: "home",
-    path: "",
+    path: "/admin/home",
     components: {
       default: () => import("../modules/home/home.vue"),
     },
