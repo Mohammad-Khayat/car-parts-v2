@@ -13,13 +13,15 @@
           </b-form-group>
         </ValidationObserver>
       </vue-modal>
+
+
+       <b-row>
+
+      </b-row>
       </b-container>
 
-
-      <b-container fluid>
-
-
-      </b-container>
+  
+   
   </div>
 </template>
 
