@@ -39,10 +39,25 @@ $theme-colors: (
   box-shadow: none !important;
 }
 //Global Classes
+.rounded-15{
+  border-radius: 15px !important;
+}
+.rounded-20{
+  border-radius: 20px !important;
+}
+.rounded-25{
+  border-radius: 25px !important;
+}
 .fit {
   width: 100% !important;
   height: 100% !important;
 }
+
+.flex-col{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
 .flex-center-nf {
   display: flex !important;
   align-items: center !important;
