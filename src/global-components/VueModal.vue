@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="modal-component">
     <div class="modal-parent" :class="visible ? 'visible' : 'unvisible'">
       <b-card
         no-body
@@ -77,7 +77,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss"   >
+.modal-component{
+
 .modal-parent {
   height: 100vh;
   width: 100vw;
@@ -126,6 +128,8 @@ width: 36px;
   position: fixed;
   bottom: 12%;
   right: 3%;
+
+}
 
 }
 </style>
