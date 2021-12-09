@@ -18,7 +18,7 @@ export default {
         {
           id: 3,
           name: "قطع بودي",
-          quantity: 20,
+          quantity: 18,
           image:
             "https://5.imimg.com/data5/LB/BO/CX/SELLER-30560611/panel-parts-500x500.jpg",
         },
