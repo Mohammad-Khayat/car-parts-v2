@@ -1,8 +1,13 @@
 
 export default [
+
+  {
+    redirect: "home",
+    path: "/",
+  },
   {
     name: "home",
-    path: "/admin/home",
+    path: "home",
     components: {
       default: () => import("../modules/home/home.vue"),
     },
@@ -67,8 +72,8 @@ export default [
   // },
 
   {
-    path: "categories",
     name: "Categories",
+    path: "categories",
     components: {
       default: () => import("../modules/categories/categories.vue"),
     },

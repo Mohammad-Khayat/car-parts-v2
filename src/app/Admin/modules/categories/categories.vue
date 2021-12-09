@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="categories">
       <b-container fluid>
       <vue-modal width='30' height='50' title="اضافة تصنيف">
         <ValidationObserver>
@@ -18,13 +18,16 @@
 
        <b-row>
          <b-col md="4"  v-for="category in categories " :key="category.id">
-           <b-card>
-        
-             <b-img :src="category.image " class="w-50" style="height:200px; object-fit:cover">
+          
+ 
+          <overlay-card :image='category.image' overlayClass='p-1 text-light position-relative'>
+            <div class="fit flex-center ">
+              <h1>{{category.name}}</h1>
+              <action-btn variant='danger' type="delete" class="position-absolute bottom-left rounded-circle"></action-btn>
+            </div>
 
-             </b-img>
-           </b-card>
-         </b-col>
+          </overlay-card>
+          </b-col>
       </b-row>
       </b-container>
      <!--commit-->
@@ -34,12 +37,21 @@
 </template>
 
 <script>
+import ActionBtn from '@/global-components/ActionBtn.vue'
 import { mapState } from 'vuex'
   export default {
+  components: { ActionBtn },
     computed:{
       ...mapState({categories:({categories})=>categories.categories})
     }
 }
 </script>
+
+
+<style lang="scss">
+.categories{
+
+}
+</style>
 
  

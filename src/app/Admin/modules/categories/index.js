@@ -6,21 +6,21 @@ export default {
           id: 1,
           name: "قطع محرك",
           quantity: "35",
-          image: "https://eskipaper.com/images/car-engine-2.jpg",
+          image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/BMW_S85B50_Engine.JPG",
         },
         {
           id: 2,
           name: "قطع دوزان",
           quantity: "35",
           image:
-            "https://lh3.googleusercontent.com/proxy/RwhNqQ-7O3sbyahhqsZi6W2LKMwEJo7kZtPpkpQX0pFaxr5z5lm8pzTeS-qDB0JH-_XGGpECVyNSJGJmxF064dL7C3hZrHdf3qEOi0g4DT2uejvxK_C6IA2-lJqEDYQ40jDD_wB0WxAm9e4QwvvlDhQ",
+            "https://di-uploads-pod14.dealerinspire.com/toyotaoforlando/uploads/2019/04/car-parts.jpg",
         },
         {
           id: 3,
           name: "قطع بودي",
           quantity: 20,
           image:
-            "https://5.imimg.com/data5/LB/BO/CX/SELLER-30560611/panel-parts-500x500.jpg",
+            "https://images.caricos.com/m/mercedes-benz/2014_mercedes-benz_s-class/images/1920x1080/2014_mercedes-benz_s-class_50_1920x1080.jpg",
         },
       ],
       categoryDto: {

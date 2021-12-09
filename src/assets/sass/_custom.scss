@@ -105,5 +105,8 @@ $theme-colors: (
 .dropdown-toggle {
   outline: none !important;
 }
-
+.bottom-left{
+  left: 0;
+  bottom: 0;
+}
 @import "bootstrap/scss/bootstrap";

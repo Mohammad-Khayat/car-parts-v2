@@ -42,6 +42,7 @@
             :to="item.path"
             class="my-2"
           >
+          
             <fa :icon="item.icon" class="mr-2 text-g1" />
             <span :class="'text-g1'">
               {{ item.name }}
