@@ -7,6 +7,7 @@ import VueTable from "@/global-components/VueTable";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import VueGoodTablePlugin from 'vue-good-table';
+import OverlayCard from '@/global-components/OverlayCard.vue'
 import {ValidationObserver,ValidationProvider} from 'vee-validate'
 import 'vue-good-table/dist/vue-good-table.css'
 import {
@@ -66,8 +67,7 @@ Vue.component("input-image", InputImage);
 Vue.component("vue-modal", VueModal);
 Vue.component("vue-select",  VueSelect);
 Vue.component("vue-table",  VueTable);
+Vue.component("overlay-card",OverlayCard)
 Vue.component("Action",  ActionBtn);
- 
-
 Vue.component("ValidationObserver",  ValidationObserver);
 Vue.component("ValidationProvider",  ValidationProvider);

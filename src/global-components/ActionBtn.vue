@@ -1,10 +1,8 @@
 <template >
-    <div class="action-btn">
-        <b-button variant="primary" v-bind="$attrs">
+         <b-button  v-bind="$attrs" @click="$emit('click')">
          <fa :icon="getIconName"/>
         </b-button>
-    </div>
-</template>
+ </template>
 <script>
 export default {
     props:{
