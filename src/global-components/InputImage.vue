@@ -59,7 +59,10 @@ export default {
     isMulti() {
       return this.$attrs.multiple == "";
     },
-    inputWidth(){
+    inputWidth(){  
+
+
+      
    return document.getElementById('vfile')
     }
   },
