@@ -125,4 +125,40 @@ $theme-colors: (
   left: 50%;
   transform: translate(-50%)
 }
+.ob-cover{
+object-fit: cover;
+}
+.ob-contain{
+  object-fit: contain;
+}
+.h50px{
+  height: 50px !important;
+}
+.h100px{
+  height: 100px !important;
+}
+.h150px{
+  height: 150px !important;
+}
+.h200px{
+  height: 200px !important;
+}
+.h250px{
+  height: 250px !important;
+}
+.h300px{
+  height: 300px !important;
+}
+.h350px{
+  height:350px !important;
+}
+.h400px{
+  height: 400px !important;
+}
+.h450px{
+  height: 450px !important;
+}
+.h500px{
+  height: 500px !important;
+}
 @import "bootstrap/scss/bootstrap";
