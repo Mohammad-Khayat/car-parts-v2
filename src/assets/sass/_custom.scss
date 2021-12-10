@@ -109,4 +109,20 @@ $theme-colors: (
   left: 0;
   bottom: 0;
 }
+.bottom-right{
+  right: 0;
+  bottom: 0;
+}
+.top-left{
+  left: 0;
+  top: 0;
+}
+.top-right{
+  right: 0;
+  top: 0;
+}
+.abs-center{
+  left: 50%;
+  transform: translate(-50%)
+}
 @import "bootstrap/scss/bootstrap";

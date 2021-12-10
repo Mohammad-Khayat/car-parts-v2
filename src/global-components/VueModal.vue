@@ -122,9 +122,10 @@ height: 36px;
 width: 36px;
 }
 .action-btn{
+  z-index: 100;
   height: 45px;
   width: 45px;
-  border-radius: 50% !important;
+  border-radius:20px !important;
   position: fixed;
   bottom: 12%;
   right: 3%;

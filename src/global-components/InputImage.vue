@@ -1,7 +1,8 @@
 <template>
-  <div class="vue-file-component">
+  <div class="vue-file-component ">
     <label for="vfile" v-if="label" class="mr-1 mb-1">{{ label }}</label>
     <FormulateInput
+
       id="vfile"
       @input="handleInput"
       @file-removed="deleteFile"
@@ -12,8 +13,8 @@
       v-bind="$attrs"
     >
     </FormulateInput>
-
-    <div class="image-previewer" v-if="value">
+    {{inputWidth}}
+    <div class="image-previewer w-100" v-if="value">
       <b-row v-if="isMulti" cols="3 ">
         <b-col v-for="(image, i) in images" :key="i">
           <div class="img">
@@ -37,7 +38,7 @@
         <b-button class="position-absolute rounded-pill" variant="danger"
           ><fa icon="fas fa-times"></fa
         ></b-button>
-        <b-img class="w-100 border" :src="value"></b-img>
+        <b-img class="border" style="max-width:300px" :src="value" ></b-img>
       </div>
     </div>
   </div>
@@ -53,10 +54,14 @@ export default {
       file: null,
     };
   },
+
   computed: {
     isMulti() {
       return this.$attrs.multiple == "";
     },
+    inputWidth(){
+   return document.getElementById('vfile')
+    }
   },
   mounted() {
     if (this.isMulti)
@@ -103,6 +108,7 @@ export default {
 
 <style lang="scss">
 .vue-file-component {
+  max-width: 100%;
   label {
     font-size: 0.9rem;
   }
