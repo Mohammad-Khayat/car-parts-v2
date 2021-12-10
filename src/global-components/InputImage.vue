@@ -12,9 +12,8 @@
       name="file"
       v-bind="$attrs"
     >
-    </FormulateInput>
-    {{inputWidth}}
-    <div class="image-previewer w-100" v-if="value">
+     </FormulateInput>
+     <div class="image-previewer w-100" v-if="value">
       <b-row v-if="isMulti" cols="3 ">
         <b-col v-for="(image, i) in images" :key="i">
           <div class="img">
@@ -36,6 +35,7 @@
       </b-row>
       <div v-else>
         <b-button class="position-absolute rounded-pill" variant="danger"
+        @click="upload"
           ><fa icon="fas fa-times"></fa
         ></b-button>
         <b-img class="border" style="max-width:300px" :src="value" ></b-img>
@@ -60,8 +60,6 @@ export default {
       return this.$attrs.multiple == "";
     },
     inputWidth(){  
-
-
       
    return document.getElementById('vfile')
     }

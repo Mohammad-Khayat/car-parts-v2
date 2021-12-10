@@ -24,52 +24,52 @@ export default [
     },
   },
 
-  // {
-  //   name: "cars",
-  //   path: "cars",
-  //   components: {
-  //     default: () => import("@admin/cars"),
-  //     // actions: () =>
-  //     //   import("@admin/cars"),
-  //   },
+  {
+    name: "cars",
+    path: "cars",
+    components: {
+      default: () => import("../modules/cars/cars.vue"),
+      // actions: () =>
+      //   import("@admin/cars"),
+    },
 
-  //   meta: {
-  //     pageTitle: "السيارات",
-  //     breadcrumb: [
-  //       {
-  //         name: "الرئيسية",
-  //         path: "/admin",
-  //         icon: "fas fa-home",
-  //       },
-  //       {
-  //         name: "السيارات",
-  //         path: "/cars",
-  //         icon: "fas fa-car",
-  //       },
-  //     ],
-  //   },
-  // },
-  // {
-  //   name: "CarDetails",
-  //   path: "cars/:id",
-  //   props: true,
-  //   component: () => import("../views/admin/pages/cars/components/CarForm.vue"),
-  //   meta: {
-  //     pageTitle: "الرئيسية",
-  //     breadcrumb: [
-  //       {
-  //         name: "الرئيسية",
-  //         path: "/admin",
-  //         icon: "fas fa-home",
-  //       },
-  //       {
-  //         name: "السيارات",
-  //         path: "/cars",
-  //         icon: "fas fa-car",
-  //       },
-  //     ],
-  //   },
-  // },
+    meta: {
+      pageTitle: "السيارات",
+      breadcrumb: [
+        {
+          name: "الرئيسية",
+          path: "/admin",
+          icon: "fas fa-home",
+        },
+        {
+          name: "السيارات",
+          path: "/cars",
+          icon: "fas fa-car",
+        },
+      ],
+    },
+  },
+  {
+    name: "CarDetails",
+    path: "cars/:id",
+    props: true,
+    component: () => import("../modules/cars/cars.vue"),
+    meta: {
+      pageTitle: "الرئيسية",
+      breadcrumb: [
+        {
+          name: "الرئيسية",
+          path: "/admin",
+          icon: "fas fa-home",
+        },
+        {
+          name: "السيارات",
+          path: "/cars",
+          icon: "fas fa-car",
+        },
+      ],
+    },
+  },
 
   {
     name: "Categories",

@@ -48,6 +48,30 @@ $theme-colors: (
 .rounded-25{
   border-radius: 25px !important;
 }
+.rounded-top-15{
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+.rounded-top-20{
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+.rounded-top-25{
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+.rounded-bottom-15{
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+.rounded-bottom-20{
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.rounded-bottom-25{
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
 .fit {
   width: 100% !important;
   height: 100% !important;
@@ -124,5 +148,41 @@ $theme-colors: (
 .abs-center{
   left: 50%;
   transform: translate(-50%)
+}
+.ob-cover{
+object-fit: cover;
+}
+.ob-contain{
+  object-fit: contain;
+}
+.h50px{
+  height: 50px !important;
+}
+.h100px{
+  height: 100px !important;
+}
+.h150px{
+  height: 150px !important;
+}
+.h200px{
+  height: 200px !important;
+}
+.h250px{
+  height: 250px !important;
+}
+.h300px{
+  height: 300px !important;
+}
+.h350px{
+  height:350px !important;
+}
+.h400px{
+  height: 400px !important;
+}
+.h450px{
+  height: 450px !important;
+}
+.h500px{
+  height: 500px !important;
 }
 @import "bootstrap/scss/bootstrap";
