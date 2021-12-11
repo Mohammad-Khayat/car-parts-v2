@@ -72,7 +72,7 @@ export default {
       commit("Add_Car", payload);
     },
     async getCars({ commit }) {
-      let res = await axios.get("http://192.168.43.34:8000/api/car/all");
+      let res = await axios.get("https://f4ba-193-124-164-247.ngrok.io/api/car/all");
       commit("Set_Cars", res.data);
     },
     async deleteCar({ commit }, payload) {
