@@ -28,7 +28,7 @@ export default [
     name: "cars",
     path: "cars",
     components: {
-      default: () => import("../modules/cars/cars.vue"),
+      default: () => import("../modules/cars/Cars.vue"),
       // actions: () =>
       //   import("@admin/cars"),
     },
@@ -53,7 +53,7 @@ export default [
     name: "CarDetails",
     path: "cars/:id",
     props: true,
-    component: () => import("../modules/cars/cars.vue"),
+    component: () => import("../modules/cars/Cars.vue"),
     meta: {
       pageTitle: "الرئيسية",
       breadcrumb: [

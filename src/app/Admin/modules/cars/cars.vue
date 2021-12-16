@@ -7,15 +7,14 @@
               </b-col>
           </b-row>
            <b-row>
-              <b-col cols="12" md="6" lg="4" xl="3" class="my-3 my-md-0"  v-for="car in search(cars,['name','country','maker'],query)" :key="car.id" >
-                  <car-card :car="car"></car-card>
+              <b-col cols="12" md="6" lg="4" xl="3" class="my-3  "  v-for="car in search(cars,['name','country','maker'],query)" :key="car.id" >
+                  <car-card :car="car" @details='showModal'></car-card>
+          
               </b-col>
           </b-row>
       </b-container>
-    <vue-modal  bodyClass="dialog-style">
-        <car-form ></car-form>
+        <car-form ref="formModal" ></car-form>
 
-    </vue-modal>
 
   </div>
 </template>
@@ -40,7 +39,10 @@ import CarForm from './components/CarForm.vue'
     },
     methods:{
         ...mapActions(['getCars']),
-        search
+        search,
+        showModal(){
+            this.$refs.formModal.openModal()
+        }
     },
     created(){
         // this.getCars();

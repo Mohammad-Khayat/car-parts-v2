@@ -47,13 +47,13 @@
                 $emit('ok');
                 close();
               "
-              > اضافة <fa icon='fas fa-plus' class="mx-1"></fa>  </b-button
+              > اضافة <fa icon='fas fa-plus' class="mx-1"></fa> </b-button
             >
           </slot>
         </template>
       </b-card>
     </div>
-    <b-btn v-if="!noBtn" variant="primary" class="action-btn" @click="visible=true">
+    <b-btn v-if="!noBtn" variant="primary" class="action-btn " @click="visible=true">
       <slot name="add">
         <fa icon='fas fa-plus'></fa>
       </slot>
@@ -65,7 +65,7 @@
 export default { 
 
    inheritAttrs: false,
-  props: ["width", "height", "title","noBtn","isEdit","bodyClass"],
+  props: ["width", "height", "title","noBtn","isEdit","bodyClass","btnClass"],
   data() {
     return {
       visible: false,
@@ -120,6 +120,7 @@ export default {
   min-width:800px;
   @media (max-width:768px) {
     min-width: 400px;
+
   }
 }
 .close-btn{

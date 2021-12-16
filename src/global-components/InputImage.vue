@@ -1,8 +1,7 @@
 <template>
-  <div class="vue-file-component ">
-    <label for="vfile" v-if="label" class="mr-1 mb-1">{{ label }}</label>
+  <div class="vue-file-component w-100">
+    <label  v-if="label" class="mr-1 mb-1">{{ label }}</label>
     <FormulateInput
-
       id="vfile"
       @input="handleInput"
       @file-removed="deleteFile"
@@ -38,7 +37,7 @@
         @click="upload"
           ><fa icon="fas fa-times"></fa
         ></b-button>
-        <b-img class="border" style="max-width:300px" :src="value" ></b-img>
+        <b-img class="border w-100 rounded-20"  :src="value" ></b-img>
       </div>
     </div>
   </div>
@@ -109,10 +108,18 @@ export default {
 
 <style lang="scss">
 .vue-file-component {
-  max-width: 100%;
-  label {
-    font-size: 0.9rem;
+  *{
+   &:hover{
+        .formulate-input-upload-area-mask {
+        border-color: #7a7a7a !important ;
+        &::before {
+          background-color: #7a7a7a !important;
+        }
+      }
+   } 
   }
+  max-width: 100%;
+ 
   .formulate-input-element {
     max-width: 100% !important;
   }
