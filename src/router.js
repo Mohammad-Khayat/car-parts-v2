@@ -19,6 +19,15 @@ const routes = [
     },
   },
 
+  {
+
+    name: " ",
+    path: "/login",
+    components: {
+      default: () => import("@/app/Admin/modules/auth/Login.vue"),
+    },
+  }
+
 ];
 
 const router = new VueRouter({

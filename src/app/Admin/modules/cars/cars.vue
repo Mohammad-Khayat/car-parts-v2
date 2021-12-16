@@ -12,7 +12,10 @@
               </b-col>
           </b-row>
       </b-container>
-    <vue-modal></vue-modal>
+    <vue-modal>
+        <car-form></car-form>
+
+    </vue-modal>
 
   </div>
 </template>
@@ -21,9 +24,11 @@
 import {mapState , mapActions} from 'vuex'
 import search from '@/functions/search.js'
 import CarCard from './components/CarCard.vue'
-export default {
+import CarForm from './components/CarForm.vue'
+ export default {
     components:{
-        CarCard
+        CarCard,
+        CarForm
     },
     data(){
         return{
