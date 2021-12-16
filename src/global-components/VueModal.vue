@@ -2,9 +2,12 @@
   <div class="modal-component">
     <div class="modal-parent" :class="visible ? 'visible' : 'unvisible'">
       <b-card
-        no-body
+         no-body
         class="modal-card"
+        :class="bodyClass"
+        :v-bind="$attrs"
        >
+
         <template #header>
           <div class="d-flex justify-content-between align-items-center">
             <h4 class="m-0">{{ title }}</h4>
@@ -44,13 +47,13 @@
                 $emit('ok');
                 close();
               "
-              > اضافة <fa icon='fas fa-plus' class="mx-1"></fa>  </b-button
+              > اضافة <fa icon='fas fa-plus' class="mx-1"></fa> </b-button
             >
           </slot>
         </template>
       </b-card>
     </div>
-    <b-btn v-if="!noBtn" variant="primary" class="action-btn" @click="visible=true">
+    <b-btn v-if="!noBtn" variant="primary" class="action-btn " @click="visible=true">
       <slot name="add">
         <fa icon='fas fa-plus'></fa>
       </slot>
@@ -59,8 +62,10 @@
 </template>
 
 <script>
-export default {
-  props: ["width", "height", "title","noBtn","isEdit"],
+export default { 
+
+   inheritAttrs: false,
+  props: ["width", "height", "title","noBtn","isEdit","bodyClass","btnClass"],
   data() {
     return {
       visible: false,
@@ -112,9 +117,10 @@ export default {
   }
 .card-body {
   overflow: auto;
-  min-width: 500px;
+  min-width:800px;
   @media (max-width:768px) {
     min-width: 400px;
+
   }
 }
 .close-btn{

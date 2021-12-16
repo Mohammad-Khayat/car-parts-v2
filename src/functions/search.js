@@ -1,9 +1,12 @@
-function search(list, keys, query) {
-    console.log(list)
-    console.log(keys)
-    console.log(query)
+function listSearch(list, keys, query) {
+  if(query)
   return list.filter((el) => {
-        return el[keys[0]].indexOf(query) != -1
+    return keys.some((key) => {   
+     return el[key].toLowerCase().indexOf(query.toLowerCase()) != -1
+    });
   });
+  else{
+    return list
+  }
 }
-export default search;
+export default listSearch;

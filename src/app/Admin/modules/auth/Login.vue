@@ -10,6 +10,7 @@
     "
   >
     <b-form class="auth-form bg-light rounded shadow">
+      {{loginDto}}
       <b-card>
         <b-row>
           <b-col cols="12">
@@ -47,13 +48,21 @@
 </template>
 
 <script>
+import axios from 'axios'
 import {mapActions, mapState} from 'vuex'
 export default {
   computed:{
     ...mapState({loginDto:({auth})=>auth.loginDto})
   },
   methods:{
-    ...mapActions(['login'])
+    ...mapActions(['']),
+    login( dto ){
+        console.log(dto)
+      axios.post('http://localhost:3000/post' , {dto}).then((res)=>{
+        console.log(res);
+      })
+    
+    }
   }
 };
 </script>

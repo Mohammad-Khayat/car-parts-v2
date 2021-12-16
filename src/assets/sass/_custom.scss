@@ -4,8 +4,8 @@ $mainDark: #212121;
 $darkTheme: #1a1a1a;
 $mainLight: #fafafa;
 $lightTheme: #fafafa;
-$primary: #005da8;
-$secondary: #34495e;
+$primary: #009682;
+$secondary: #00203b;
 $light: $mainLight;
 $g1: #eee;
 $g2: #ccc;
@@ -155,6 +155,12 @@ object-fit: cover;
 .ob-contain{
   object-fit: contain;
 }
+.h30px{
+  height: 30px !important;
+}
+.h40px{
+  height: 40px !important;
+}
 .h50px{
   height: 50px !important;
 }
@@ -174,15 +180,52 @@ object-fit: cover;
   height: 300px !important;
 }
 .h350px{
-  height:350px !important;
+  height: 350px !important;
 }
 .h400px{
-  height: 400px !important;
+  height:  400px !important;
 }
 .h450px{
-  height: 450px !important;
+  height:   450px !important;
 }
 .h500px{
-  height: 500px !important;
+  height:  500px !important;
+}
+.w30px{
+  width: 30px !important;
+}
+.w40px{
+  width: 40px !important;
+}
+ 
+.w50px{
+  width:  50px !important;
+}
+.w100px{
+  width:  100px !important;
+}
+.w150px{
+  width:  150px !important;
+}
+.w200px{
+  width:  200px !important;
+}
+.w250px{
+  width:  250px !important;
+}
+.w300px{
+  width:  300px !important;
+}
+.w350px{
+  width: 350px !important;
+}
+.w400px{
+  width:  400px !important;
+}
+.w450px{
+  width:  450px !important;
+}
+.w500px{
+  width:  500px !important;
 }
 @import "bootstrap/scss/bootstrap";

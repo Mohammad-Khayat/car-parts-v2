@@ -61,6 +61,9 @@ export default {
       state.cars = payload;
     },
     Delete_Car() {},
+    Set_Car_Dto(state,payload){
+      Object.assign(state.carDto,payload)
+    }
   },
   actions: {
     async addCar({ commit }, payload) {
