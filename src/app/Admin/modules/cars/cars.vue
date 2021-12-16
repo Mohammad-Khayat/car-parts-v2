@@ -12,8 +12,8 @@
               </b-col>
           </b-row>
       </b-container>
-    <vue-modal>
-        <car-form></car-form>
+    <vue-modal  bodyClass="dialog-style">
+        <car-form ></car-form>
 
     </vue-modal>
 
@@ -48,6 +48,11 @@ import CarForm from './components/CarForm.vue'
 }
 </script>
 
-<style>
-
+<style lang='scss'>
+.dialog-style{
+    min-width: 60%;
+    @media (max-width:768px) {
+        min-width: 90%;
+    }
+}
 </style>

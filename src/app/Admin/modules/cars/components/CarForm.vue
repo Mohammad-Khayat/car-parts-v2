@@ -1,7 +1,7 @@
 <template>
   <div class="car-form">
 
-      <VaidationObserver>
+      <ValidationObserver>
 
           <b-row>
 
@@ -28,7 +28,7 @@
 
 
 
-      </VaidationObserver>
+      </ValidationObserver>
 
 
 
