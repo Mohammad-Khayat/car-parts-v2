@@ -1,6 +1,6 @@
 <template>
   <div class="car-form">
-                <vue-modal  bodyClass="dialog-style rounded-20 w-50" title="اضافة سيارة" ref="modal">
+                <vue-modal  bodyClass="dialog-style rounded-20 w-75  " title="اضافة سيارة" ref="modal">
 
 
             
@@ -9,7 +9,7 @@
 
           <b-row>
 
-              <b-col cols="6"> 
+              <b-col cols="12" md="6"> 
           <ValidationProvider>
               <div class="form-group">
               <label for=""> اسم السيارة</label>
@@ -18,7 +18,7 @@
           </ValidationProvider>
               </b-col>
 
-              <b-col cols="6"> 
+              <b-col cols="12" md="6"> 
           <ValidationProvider>
               <div class="form-group">
               <label for=""> سنة التصنيع</label>
@@ -27,7 +27,7 @@
           </ValidationProvider>
               </b-col>
 
-              <b-col cols="6"> 
+              <b-col cols="12" md="6"> 
           <ValidationProvider>
               <div class="form-group">
                   <label for="">أختر بلد المنشأ</label>
@@ -36,7 +36,7 @@
           </ValidationProvider>
               </b-col>
 
-              <b-col cols="6"> 
+              <b-col cols="12" md="6"> 
           <ValidationProvider>
               <div class="form-group">
                   <label for="">أختر الشركة المصنعة</label>
@@ -45,7 +45,7 @@
           </ValidationProvider>
               </b-col>
 
-            <b-col cols="6">
+            <b-col cols="12" md="6">
 
         <input-image :label="'صورة السيارة'" :value="carDto.image"></input-image>      
             </b-col>
